@@ -1,0 +1,198 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.int {
+    font-family: 'Inter', sans-serif;
+}
+
+.lex {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    height: 45rem;
+    width: 100rem;
+    border-radius: 10px;
+    background-color: hsl(244, 38%, 16%);
+}
+
+.card-text {
+    height: 45rem;
+    width: 50rem;
+    padding: 8rem;
+    text-align: left;
+}
+
+.main-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4rem;
+    line-height: 1.3;
+}
+
+.main-heading span {
+    color: hsl(277, 64%, 61%);
+}
+
+.main-paragraph {
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-bottom: 6rem;
+    max-width: 30rem;
+    line-height: 2;
+}
+
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 29rem;
+
+}
+
+.benefits ul li:first-child {
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-align: left;
+}
+
+.benefits ul li:nth-child(2) {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.companies {
+    padding-left: 0;
+}
+
+
+/* IMAGE */
+/* IMAGE */
+/* IMAGE */
+.card-image-mobile {
+    display: none;
+}
+
+.image-container {
+    display: flex;
+    height: 45rem;
+    width: 50rem;
+    position: relative;
+}
+
+img.card-image-desktop {
+    display: block;
+    width: 100%; 
+    border-radius: 0 1rem 1rem 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .6;
+    background-color: hsl(277, 64%, 61%); 
+    border-radius: 0 1rem 1rem 0;
+  }
+
+
+
+  /* MEDIA QUERY */
+  /* MEDIA QUERY */
+  /* MEDIA QUERY */
+  @media screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 75rem;
+        width: 30rem;
+        margin: 5rem;
+    }
+
+    .card-text {
+        text-align: center;
+        height: 50rem;
+        width: 25rem;
+        padding: 3rem 1.5rem 2.5rem;
+    }
+
+    .image-container {
+        width: 30rem;
+        height: 25rem;
+        
+    }
+
+    .overlay {
+        border-radius: 1rem 1rem 0rem 0rem; 
+      } 
+
+    img.card-image-desktop {
+        display: none;
+    }
+
+    .card-image-mobile {
+        display: block;
+        width: 100%;
+        border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .main-heading {
+        font-size: 2.3rem;
+    }
+
+    .main-paragraph {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+
+    .companies,
+    .queries,
+    .templates {
+        padding-left: 0;
+    }
+
+    .benefits ul li:first-child {
+        text-align: center;
+    }
+
+}
+
